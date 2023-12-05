@@ -2,8 +2,8 @@ import os
 import sys
 import argparse
 
-import repo
-from ollama import prepare_request, send_request, format_files_for_llm
+from . import repo
+from .ollama import prepare_request, send_request, format_files_for_llm
 import glob
 
 files_to_exclude = ["package-lock.json", "license.md"]
