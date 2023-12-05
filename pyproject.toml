@@ -5,7 +5,7 @@ line-length = 120
 ignore = ["E501"]
 
 [tool.poetry]
-name = "artificial-duck"
+name = "artificial_duck"
 version = "0.1.0"
 description = "Ask questions about a code base leveraging the api exposed by Ollama."
 authors = ["David Burhans <david.burhans@gmail.com>"]
@@ -20,7 +20,7 @@ tiktoken = "^0.5.1"
 gitpython = "^3.1.40"
 
 [tool.poetry.scripts]
-adask = "artificial_duck.cli:cli"
+askad = "artificial_duck.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
