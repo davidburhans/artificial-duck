@@ -20,11 +20,8 @@ tiktoken = "^0.5.1"
 gitpython = "^3.1.40"
 
 [tool.poetry.scripts]
-ad = "artificial-duck.cli:cli"
+adask = "artificial-duck.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[console_scripts]
-ad = "artificial-duck.cli:"
