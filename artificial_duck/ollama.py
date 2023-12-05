@@ -12,7 +12,8 @@ about the following code. Take your time and pay close attention to detail.
 Apply examples directly to the provided code when possible. Any code written
 should be simple and easy to understand.""",
 )
-service_url = os.environ.get("OLLAMA_URL") or "http://127.0.0.1:11434"
+service_url = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434")
+model = os.environ.get("OLLAMA_MODEL", "codellama")
 
 
 def read_file(filepath: str, root_dir: str):
@@ -33,7 +34,7 @@ def format_files_for_llm(files: list[str], root_dir: str = ""):
 def prepare_request(question: str, content: str, context: list[int]):
     request_data = dict(
         context=context,
-        model="codellama",
+        model=model,
         prompt=question,
         stream=False,
         system=f"""{system_prompt}
