@@ -1,0 +1,27 @@
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+ignore = ["E501"]
+
+[tool.poetry]
+name = "artificial-duck"
+version = "0.1.0"
+description = "Ask questions about a code base leveraging the api exposed by Ollama."
+authors = ["David Burhans <david.burhans@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages=[{ from = "artificial-duck", include = "*" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+tiktoken = "^0.5.1"
+gitpython = "^3.1.40"
+
+[tool.poetry.scripts]
+artificial-duck = "artificial-duck.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
