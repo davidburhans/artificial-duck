@@ -11,7 +11,7 @@ description = "Ask questions about a code base leveraging the api exposed by Oll
 authors = ["David Burhans <david.burhans@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages=[{ from = "artificial-duck", include = "*" }]
+packages=[{ from = "artificial_duck", include = "*" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -20,7 +20,7 @@ tiktoken = "^0.5.1"
 gitpython = "^3.1.40"
 
 [tool.poetry.scripts]
-adask = "artificial-duck.cli:cli"
+adask = "artificial_duck.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
