@@ -7,6 +7,10 @@ Artificial Duck allows you to ask questions about source code using natural lang
 You must have [Ollama]() installed and running on your system. If it is not running on the default
 location of `http://127.0.0.1:11434`, specify the correct url using the `OLLAMA_URL` env variable.
 
+## Installation
+
+`python3 -m pip install git+https://github.com/davidburhans/artificial_duck.git#egg=artificial_duck`
+
 ## Usage
 
 `artificial-duck [-h] [--branch BRANCH] [--query QUERY] [--count] about`
