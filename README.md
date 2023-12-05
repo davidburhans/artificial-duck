@@ -4,7 +4,7 @@ Artificial Duck allows you to ask questions about source code using natural lang
 
 ## Requirements
 
-You must have [Ollama]() installed and running on your system. If it is not running on the default
+You must have [Ollama](https://ollama.ai/) installed and running on your system. If it is not running on the default
 location of `http://127.0.0.1:11434`, specify the correct url using the `OLLAMA_URL` env variable.
 
 ## Installation
